@@ -30,7 +30,7 @@ else:
     DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['musique.herokuapp.com']
+ALLOWED_HOSTS = ['moved.herokuapp.com']
 
 # Application definition
 
