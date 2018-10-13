@@ -19,7 +19,7 @@
         <div class="col-sm-4 text-center">
             <a href="{% url 'store:detail' album_id=album.id %}">
                   
-              <img src="{{ album.image.url }}" class="img-responsive" alt="{{ album.title }}" width=250 height=150>
+              <img src="{{ album.image }}" class="img-responsive" alt="{{ album.title }}" width=250 height=150>
             
             </a>
             <h3><a href="{% url 'store:detail' album_id=album.id %}">{{ album.title }}</a></h3>

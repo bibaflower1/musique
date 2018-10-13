@@ -17,7 +17,7 @@ class Album(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     available = models.BooleanField(default=True)
     title = models.CharField(max_length=200)
-    image = models.ImageField(blank=True, null=True)
+    image = models.CharField('image', max_length=256, null=True)
     video = models.CharField('video', max_length=200, null=True)
     artists = models.ManyToManyField(Artist, related_name='albums', blank=True)
     def __str__(self):
